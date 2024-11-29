@@ -1,0 +1,187 @@
+<html>
+
+<head>
+  <title>Página principal</title>
+</head>
+
+<body>
+  <h1 id="inicio">exemplo de matéria em um blog</h1>
+  <hr />
+  <h2>Indice</h2>
+  <ul>
+    <li><a href="#o-que-é-HTML">O que é HTML ? ferramentas utilizadas ?</a></li>
+    <li><a href="#inspetor-de-elementos">inspetor de elementos</a></li>
+    <li><a href="#Estrutura-HTML">Estrutura Básica do HTML</a></li>
+    <li><a href="#atributos-das-tag">Atributos das tag</a></li>
+    <li><a href="#exemplo-de-textos">exemplo-de-textos</a></li>
+    <li><a href="#tipos-de-listas">Tipos de Listas</a></li>
+
+    <li><a href="#referencias">Referências</a></li>
+    
+    
+  </ul>
+  <h2 id="o-que-é-HTML">o que é HTML? ferramentas Utilizadas?</h2>
+  <small><a href="#inicio">(voltar)</a></small>
+  <p> o que é HTML (HyperText Markup Language) é uma linguagem de marcação de Hipertexto utilizada para estruturar e
+    organizar conteúdo na web.<br>
+    Ele define a estrutura básica de páginas web,
+    como cabeçalhos, parágrafos, listas, links, imagens e outros elementos visuais e interativos.</p>
+  <p>Para escrever e executar códigos HTML de forma eficiente, é recomendado usar o Visual Studio Code (VSCode),<br>
+    um editor de texto poderoso com funcionalidades como autocompletar e realce de sintaxe. </p>
+  <p>O VSCode também permite a instalação de Plugins como o Live Server, que cria um servidor local na sua máquina.</p>
+  <p>Com o Live Server, você pode ver o resultado das alterações no seu código HTML em tempo real no navegador, sem
+    precisar atualizar a página manualmente.<br>
+    Essa combinação de VSCode e Live Server torna o processo de desenvolvimento web mais rápido e prático.</p>
+
+
+  <h2 id="inspetor-de-elementos">inspetor de elementos</h2>
+  <small><a href="#inicio">(voltar)</a></small>
+  <p>O Inspetor de Elementos é uma ferramenta presente em navegadores como o Google Chrome e outros, como Firefox e
+    Edge,<br>
+    permitindo aos desenvolvedores inspecionar e alterar temporariamente o código HTML, CSS de uma página web </p>
+  <p>A ferramenta, acessível pelo atalho F12 ou pelo menu no canto superior lado direito nos três pontinhos > Mais ferramentas > Ferramentas do
+    desenvolvedor,
+    possibilita testar mudanças em tempo real, sem modificar o código original. </p>
+  <p>Através dela, você pode visualizar a estrutura da página e testar novos recursos de forma imediata. </p>
+  <p>Essa ferramenta é essencial para testes rápidos e otimização do desenvolvimento de sites, ajudando a entender como
+    o código funciona e a identificar problemas.</p>
+
+  <br>
+  <h2 id="Estrutura-HTML">Estrutura básica do HTML</h2>
+  <small><a href="#inicio">(voltar)</a></small>
+  <p>O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável.
+    Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código.</p>
+  <p>Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura,
+    logo,
+    você não precisa se preocupar em decorá-la, mas é bom que faça. Veja abaixo como ela se inicia:</p>
+
+    <pre class="lang-html prettyprint linenums"><ol class="linenums"><li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li><li class="L1"><span class="tag">&lt;html</span><span class="pln"> </span><span class="atn">lang</span><span class="pun">=</span><span class="atv">"pt-br"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;head&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;title&gt;</span><span class="pln">Título da página</span><span class="tag">&lt;/title&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;/head&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;body&gt;</span></li><li class="L7"><span class="pln">    Aqui vai o código HTML que fará seu site aparecer.</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;/body&gt;</span></li><li class="L9"><span class="tag">&lt;/html&gt;</span></li></ol></pre>
+
+   <p>É possível compreender o documento em HTML de uma maneira muito simples, 
+    através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</p>
+
+    <ul>
+      <li>Definição do documento (doctype)</li>
+      <li>Cabeça (head)</li>
+      <li>Corpo (body)</li>
+    </ul>
+
+    <p>Doctype - Definindo o documento</p>
+    <p>Uma coisa importante: SEMPRE deve existir o doctype, que é este código <!DOCTYPE html>. <br>
+     O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, 
+      que o código encontrado ali é um código HTML.</p>
+
+      <p>HEAD</p>
+  <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, 
+  de uso e controle do documento: vinculação com outros arquivos,</p>
+
+   <p>BODY</p>
+   <p> é o corpo do site o código HTML que fará seu site aparecer.Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, <br>
+    onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p>
+
+   <h2 id="atributos-das-tag">Atributos das tag</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <p>As tags HTML possuem atributos que definem propriedades de seus elementos. Alguns atributos são mais globais e podem ser usados em diversas tags, como o atributo id, 
+    que serve para identificar unicamente um elemento na página. </p>
+   <p>Outros atributos são mais específicos, como o style, usado para aplicar estilos CSS diretamente na tag.</p>
+   <p>o atributo <strong>type</strong> na tag <strong>'input'</strong> que define o tipo de dado que o formulário aceitará (como texto ou número). </p>
+   <p>A tag "img" usa o atributo "src" para definir a fonte da imagem e pode ajustar a largura e altura com os atributos <strong>width</strong> e <strong>height</strong></p>
+   <p>Além disso, o JavaScript pode interagir com os elementos HTML, alterando seu conteúdo usando identificadores como o "id"</p>
+
+   <img src="img/img teste.jpg" alt="" width="300px">
+   <strong>Meu Primeiro <i>HTML!</i></strong>
+   <input type= "text"/>
+
+  
+   <h1 id="exemplo-de-textos"> Exemplos de textos</h1>
+   <small><a href="#inicio">(voltar)</a></small>
+   <h2>Textos, Títulos, Subtítulos, Parágrafos, Tag: Blockquote!</h2>
+
+   <h3>Desenvolvimento Web</h3>
+   
+   <h4>HTML Básico</h4>
+   
+   <h5>Introdução às Tags</h5>
+   
+   <h6>Subtítulo Final</h6>
+   
+   <p><strong>Parágrafos</strong> são usados para adicionar conteúdo textual em uma página web. Elas são importantes para organizar as informações de forma clara e estruturada.</p>
+   
+   <blockquote><strong>Blockquotes</strong> são usadas para destacar citações importantes ou trechos de texto retirados de outras fontes.</blockquote>
+   
+   <p>Este é um exemplo de um <strong>Parágrafo</strong> com texto em negrito para destacar uma palavra importante.</p>
+   
+   <u>HTML linguagem de marcação de hipertexto<sup>*</sup></u>
+   <br>
+   <br>
+   <i>Praticando com códigos e desafios, você pode aprender rapidamente!</i>
+   
+   <mark>Este é um texto destacado com a tag mark.</mark>
+   
+   <p>O símbolo <sup>*</sup> é um exemplo de sobrescrito, útil em equações e notas de rodapé.</p>
+
+   <br>
+
+   <h1 id="tipos-de-listas"> Tipos de listas ordenadas e Não ordenas</h1>
+   <small><a href="#inicio">(voltar)</a></small>
+   <h2>Listas de tecnologias</h2>
+
+   <ul>
+    <li>Front-End:</li>
+  </ul>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>Vue.js</li>
+    <li>Angular</li>
+  </ul>
+  
+  <ol>
+    <li>Back-End:</li>
+  </ol>
+  <ol>
+    <li>Node.js</li>
+    <li>Express</li>
+    <li>Python</li>
+    <li>Django</li>
+    <li>Ruby on Rails</li>
+    <li>PHP</li>
+    <li>Java</li>
+  </ol>
+  
+
+  <h1 id="referencias">Referências</h1>
+  <small><a href="#inicio">(voltar)</a></small>
+  <ul>
+     <li>
+          <a href="https://www.youtube.com/watch?v=_fahgk9RjTM" target="_blank" title="clique aqui e confira">Estrura do HTML</a>
+     </li>
+     <li>
+        <a href="https://www.youtube.com/watch?v=-u0DyDbH1Ek" target="_blank" title="clique aqui e confira">Atributos das tag </a>
+     </li>
+     <li>
+         <a href="https://www.youtube.com/watch?v=t_Oml4Q_zJY" target="_blank" title="clique aqui e confira">Listas ordenadas e não ordenadas</a>
+     </li>
+  </ul>
+     
+  <html>
+    <head>
+         <title>Sobre a tecnologia, página Principal</title>
+    </head>
+   <body>
+         <h1>Meu primeiro site</h1>
+         <ul>
+          <li>
+              <a href="about.html" title="clique aqui e confira">< Volta </a>
+          </li>
+         </ul>
+   </body>
+  </html>    
+   
+
+
+</body>
+
+</html>
